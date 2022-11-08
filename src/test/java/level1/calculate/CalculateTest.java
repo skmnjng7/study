@@ -13,9 +13,7 @@ public class CalculateTest {
     void sum() {
         int a = 1;
         int b = 2;
-
-        int result = a + b;
-
+        int result = Calculate.sum(a,b);
         assertEquals(3, result);
     }
 
@@ -24,7 +22,8 @@ public class CalculateTest {
     void method_minus() {
         int a = 4;
         int b = 2;
-
+        int actual = Calculate.minus(a,b);
+        assertEquals(2, actual);
     }
 
 
@@ -33,7 +32,8 @@ public class CalculateTest {
     void method_divide() {
         int dividend = 4;
         int divisor = 2;
-
+        int result = Calculate.divide(dividend, divisor);
+        assertEquals(2, result);
     }
 
 }
